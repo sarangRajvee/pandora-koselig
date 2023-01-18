@@ -1,0 +1,113 @@
+.image-1 {
+    height: 75vh;
+    width: 45vw;
+}
+.parent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    background-color: chartreuse;
+    align-items: center;
+    justify-content: center;
+    z-index:100;
+    /* background-color: #e5e5f7;
+    /* opacity: 0.8; */
+    /*background-image:  linear-gradient(#3a8c99 1px, transparent 1px), linear-gradient(to right, #3a8c99 1px, #EAD9D3 1px);
+    background-size: 20px 20px; */
+    background-color: #e5e5f7;
+/* opacity: 0.8; */
+background-image:  radial-gradient(#3a8c99 0.5px, transparent 0.5px), radial-gradient(#3a8c99 0.5px, #EAD9D3 0.5px);
+background-size: 20px 20px;
+background-position: 0 0,10px 10px;
+    /* width: fit-content; */
+}
+.saying {
+    text-align: center;
+}
+.saying h2, p {
+    font-family: 'Playfair Display', serif;
+}
+.saying h2 {
+    font-style: italic;
+    font-size: 6vw;
+}
+.saying p {
+    /* border: solid black 0.5vw; */
+    padding: 2%;
+    background-color: #e5e5f7;
+    /* opacity: 0.8; */
+    background-image:  linear-gradient(135deg, #e0b9ab 25%, transparent 25%), linear-gradient(225deg, #e0b9ab 25%, transparent 25%), linear-gradient(45deg, #e0b9ab 25%, transparent 25%), linear-gradient(315deg, #e0b9ab 25%, #EAD9D3 25%);
+    background-position:  10px 0, 10px 0, 0 0, 0 0;
+    background-size: 20px 20px;
+    background-repeat: repeat;
+    color:#424143;
+    font-size: 4vw;
+}
+img {
+    /* display: none; */
+    /* max-width: 100%;
+    max-height: 100%; */
+    /* object-fit:scale-down; */
+}
+img:hover {
+    transform: scale(125%);
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.4s;
+}
+.one {
+    /* background-color: darkslategrey; */
+}
+.one img {
+    /* object-fit: fill; */
+    max-width: 100%;
+    min-width: 100%;
+}
+.two {
+    background-color: goldenrod;
+}
+.two img {
+    max-width: 100%;
+    min-height: 100%;
+}
+.three {
+    /* background-color: rgb(104, 132, 132); */
+}
+.three img {
+    max-width: 100%;
+    min-height: 100%;
+}
+.four {
+    /* background-color: darksalmon; */
+}
+.four img {
+    max-width: 100%;
+    min-height: 100%;
+}
+.five {
+    /* background-color: lightgrey; */
+   
+}
+.five img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.six {
+    /* background-color: lightgreen; */
+   
+}
+.six img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+@media only screen and (max-width: 767px)
+{
+    img {
+        /* display: none; */
+    }
+    .image-1 {
+        height:fit-content;
+        width: 100vw;
+    }
+}

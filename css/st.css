@@ -1,0 +1,214 @@
+body {
+    background-color: #EAD9D3;
+    padding: 0px;
+    margin: 0px;
+}
+
+.header{
+    background-color: #EAD9D3;
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.header img {
+    height: 6%;
+    width: 6%;
+    margin-right: 3%;
+}
+.header h1 {
+    font-size: 8vw;
+}
+.nav-bar{
+    background-color: #EAD9D3;
+    position:sticky;
+    top:0;
+    z-index:101;
+    /* border-style: solid; */
+    /* border-color: #3a8c99;
+    border-bottom:solid #3a8c99 4px; */
+
+    /* border-bottom: #3a8c99 4px; */
+    padding: 2%;
+}
+.nav-big {
+    /* background-color: beige; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.button a {
+    font-size: 4vw;
+    color: #9D5727;
+}
+/* .footer{
+    background-color: #DFAB71;
+    position:absolute;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+     bottom:0; 
+
+}
+.footer a {
+    text-decoration: none;
+} */
+.button {
+    background-color: #3a8c99;
+    width:20%;                          /* the width can be adjusted to the user's needs*/
+    display: inline-block;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (max-width: 767px)
+{
+    .button {
+        width: 100%;
+        margin: 1%;
+    }
+    #nav-big{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        display: none;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .button {
+        height: 3vh;
+    }
+}
+svg {
+    height: 4%;
+    width: 4%;
+    margin: 0px;
+    color:#DFAB71;
+}
+.nav-small {
+    display: flex;
+    justify-content: center;
+    background-color: #424143;
+    padding:0;
+
+}
+.button a {
+    /* font-family: 'Oswald', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Playfair Display', serif; */
+    font-style: italic;
+    font-weight: 100;
+}
+.header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+@media only screen and (min-width: 768px)
+{
+    .nav-small {
+        display: none;
+    }
+}
+.contact {
+    /* background-color: darkgoldenrod;
+    width: 20vw;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 2%;
+    border-radius: 6px;
+    height: 6vh;
+    text-align: center; */
+}
+.contact:hover {
+    /* background-color:#d8984f;
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+    transition-delay: 0.1s;
+    transform: scale(125%,125%); */
+}
+.address {
+    /* background-color: darkmagenta; */
+    /* width: 40vw;
+    justify-content: center;
+    display: flex;
+    align-items: center;   
+    margin: 1%;  */
+}
+/* .timings {
+    /* background-color: darkslategrey; 
+    width: 40vw;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 1%;
+} */
+.social {
+    /* background-color: honeydew; */
+    /* width: 100vw;
+    display: flex;
+    justify-content: center; */
+}
+.social svg {
+    /* height: 5vw;
+    width: 5vh; */
+}
+/* .copyrights {
+    /* background-color: lightskyblue; 
+    width: 100vw;
+    text-align: center;
+} */
+.nav-bar {
+    /* position: relative; */
+    /* padding: 8px 8px 32px 8px; */
+    background: #3a8c99;
+}
+
+/* .nav-bar:after {
+    background: linear-gradient(-45deg, #EAD9D3 16px, transparent 0), linear-gradient(45deg, #EAD9D3 16px, transparent 0);
+    background-position: left-bottom;
+    background-repeat: repeat-x;
+    background-size: 32px 32px;
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 32px;
+} */
+.button a {
+    text-decoration: none;
+    font-weight: 100;
+    color: #f4f1f8;
+    font-size: 2vw;
+    background:
+      linear-gradient(
+        to right,
+        #3a8c99,
+        #3a8c99
+      ),
+      linear-gradient(
+        to right,
+        #424143,
+        #9D5727,
+        #DFAB71
+    );
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+  }
+  .button a:hover {
+    background-size: 0 3px, 100% 3px;
+  }
+  .address a {
+    color: #424143;
+  }

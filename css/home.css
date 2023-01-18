@@ -1,0 +1,425 @@
+ html{
+  height:100%;
+ }
+ 
+*{
+  //-webkit-box-sizing: border-box;
+  //box-sizing: border-box;
+}
+.title{
+  font-size: 4vw;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-style:italic;
+  text-decoration:underline;
+}
+.btn{
+  background-color: #3a8c99;
+  width:20vw;
+  height:5vh;
+  display:flex;
+  align-items:center;
+  margin: 4%;
+  justify-content:center;
+  padding:1.5%;
+  border-radius: 3vw;
+  font-size: 1.5vw;
+  font-family:'Montserrat',sans-serif;
+  font-weight:800;
+
+}
+.btn:hover{
+  background-color: #25575f;
+  color: white;
+  box-shadow: 5px 10px #3a8c99;
+  transition-duration: 0.4s;
+  
+}
+
+.btn a{
+    text-decoration:none;
+    
+}
+
+  body {
+    //background-color: #C0E5D9;
+    position:relative;
+    min-height:100%;
+    margin:0;
+    -webkit-font-smoothing: antialiased;
+    
+  }
+  li{
+    font-family: 'Playfair Display', serif;
+  }
+  h2{
+    font-family: 'Playfair Display', serif;
+    font-size:2vw;
+    font-weight:bold;
+  }
+  h5
+{
+  font-family: 'Playfair Display', serif;
+  margin:0px;
+  font-size:1.25vw;
+  font-weight:700;
+}
+.menu{
+  background-color: #EAD9D3;
+  width:100%;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-evenly;
+  gap: 1vh 15vw;
+  position:relative;
+}
+
+
+
+p
+{
+  font-size:12px;
+}
+.main{
+  background-image:  radial-gradient(#3A8C99 0.5px, transparent 0.5px), radial-gradient(#3A8C99 0.5px, #EAD9D3 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
+}
+
+.container
+{
+  
+
+ 
+
+  
+  background-color: #EAD9D3;
+  height:200vh;
+  width:100%;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+
+  justify-content: center;
+  
+  gap: 2vh 15vw;
+
+  align-items: center;
+  /* background-image: url("/static/bg4.jpg");
+  background-position: center; */
+  //object-fit: cover;
+  /* background-repeat: no-repeat;
+  background-size: cover;*/
+  position:relative;
+}
+
+/* End Non-Essential  */
+
+/* .property-card
+{
+  
+  margin-top:10px;
+  height:50vh;
+  width: 15vw;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  -ms-flex-direction:column;
+  flex-direction:column;
+  position:relative;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius: 1vh;
+  overflow:hidden; */
+  /* -webkit-box-shadow:  15vh 15vh 27vh #e1e1e3, -15vh -15vh 27vh #ffffff;
+  box-shadow:  15vh 15vh 27vh #e1e1e3, -15vh -15vh 27vh #ffffff; 
+}*/
+/* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
+
+/* Top Half of card, image. */
+
+/* .property-image
+{
+  height:50vh;
+  width: 15vw;
+  position:absolute;
+  top:0px;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+ // background-image:url('./static/coffee.jpeg');
+  background-size:cover;
+  object-fit: contain;
+  background-repeat:no-repeat;
+} */
+
+/* Bottom Card Section */
+
+/* .property-description
+{
+  background-color: #eaebda;
+  height:12em;
+  width:14em;
+  position:absolute;
+  bottom:0;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 0.5em 1em;
+  text-align: space-evenly;
+  //text-decoration:underline;
+  align-items:center;
+} */
+
+/* Social Icons */
+
+/* .property-social-icons
+{
+  width:1em;
+  height:1em;
+  background-color:black;
+  position:absolute;
+  bottom:1em;
+  left:1em;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+} */
+
+/* Property Cards Hover States */
+
+/* .property-card:hover .property-description
+{
+  height:0em;
+  padding:0px 1em;
+}
+.property-card:hover .property-image
+{
+  height:50vh;
+}
+
+.property-card:hover .property-social-icons
+{
+  background-color:white;
+}
+
+.property-card:hover .property-social-icons:hover
+{
+  background-color:blue;
+  cursor:pointer;
+} */
+
+  /* .col-lg-12{
+    align-items: center;
+  }
+  .col-md-4 img{
+    width: 250px;
+    height: 160px;
+  }
+  .desc {
+    width:220px;
+  }
+  .col-md-4{
+    width:250px;
+    float: left;
+    margin-left:20px;
+  }
+  
+  .container {
+    padding: 20px;
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+  }
+  
+  .profile-card {
+      background-color: #222222;
+    margin-bottom: 20px;
+    z-index: 0;
+          }
+          
+  .profile-pic {
+    border-radius: 50%;
+    position: absolute;
+    top: -65px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+    max-width: 100px;
+    -webkit-transition: all 0.4s;
+            transition: all 0.4s;
+                  }
+  
+                  
+  .profile-info {
+          color: #BDBDBD;
+          padding: 25px;
+          position: relative;
+          margin-top: 15px;
+                  }
+          
+  .profile-info h2 {
+      color: #E8E8E8;
+      letter-spacing: 4px;
+        padding-bottom: 12px;
+                  }
+                  
+  .profile-info span {
+      display: block;
+      font-size: 12px;
+      color: #4CB493;
+      letter-spacing: 2px;
+              }
+  
+  .profile-info a {
+       color: #4CB493;
+          }
+  .profile-info i {
+          padding: 15px 35px 0px 35px;
+          }
+          
+  
+  .profile-card:hover  {
+      transform: scale(1.1);
+          }
+  
+  .profile-card:hover .hvr-underline-from-center  {
+    transform: scale(1.005);
+    color:green;
+          }
+          
+          
+          
+          
+  /* Underline From Center */
+  /*.hvr-underline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    overflow: hidden;
+  }
+  .hvr-underline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 52%;
+    right: 52%;
+    bottom: 0;
+    background: #FFFFFF;
+    border-radius: 50%;
+    height: 3px;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .profile-card:hover .hvr-underline-from-center:before, .profile-card:focus .hvr-underline-from-center:before, .profile-card:active .hvr-underline-from-center:before {
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #CECECE;
+    border-radius: 0;
+  } */
+  /* .header{
+    background-color: darkseagreen;
+
+
+
+} */
+  /* .nav-bar{
+    background-color: lightblue;
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:2%;
+    margin-bottom:2%;
+    z-index: 1;
+} */
+/* .nav-big {
+    /* background-color: beige; */
+    /*display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}*/
+.main{
+    background-color: palevioletred;
+    position:relative;
+}
+/* .footer{
+    background-color: palegreen;
+    position: absolute;
+    
+    bottom: 0;
+    left:0;
+    right:0;
+
+} */
+/* .button {
+    background-color: deepskyblue;
+    width:20%;                          /* the width can be adjusted to the user's needs*/
+    /*display: inline-block;
+} */
+@media only screen and (max-width: 768px)
+{
+    /* .button {
+        width: 100%;
+        margin: 1%;
+    }
+    #nav-big{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        display: none;
+    } */
+    .btn{
+      font-size:4vw;
+      width:60vw;
+      height:4vh;
+
+    }
+    .container{
+      display:flex;
+      flex-direction:column;
+      flex-wrap:wrap;
+      justify-content: center;
+      align-items: center;
+      }
+      .property-card{
+        height:20vh;
+        width: 5vw;
+      }
+    
+}
+/* svg {
+    height: 2%;
+    width: 2%;
+    margin: 0px;
+}
+.nav-small {
+    display: flex;
+    justify-content: center;
+    background-color: aquamarine;
+    padding:0;
+
+}
+@media only screen and (min-width: 768px)
+{
+    .nav-small {
+        display: none;
+    }
+    
+} */
+
+  
